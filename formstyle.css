@@ -83,17 +83,21 @@ body
 
 .form
 {
-    flex-basis: 40%;
-    font-size: 1rem;
+    flex-basis: 25%;
+    font-size: 0.8rem;
     box-shadow: 0 0 0.5rem grey;
-    padding: 1rem 3.5rem;
+    padding: 1rem 2.5rem;
     display: flex;
     flex-flow: row wrap;
+    align-content: flex-start;
+    gap: 1rem;
 }
 
 .form h1
 {
     width: 100%;
+    height: max-content;
+    margin: 0.2rem 0;
 }
 
 .input
@@ -104,8 +108,35 @@ body
     flex-flow: column wrap;
 }
 
+.input input
+{
+    width: 250px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
 .end
 {
+    margin-top: 2rem;
     flex-basis: 30%;
     flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 2rem;
+}
+
+.end button
+{
+    width: 10rem;
+    height: 3rem;
+    background-color: #596D48;
+    color: white;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.end a:link
+{
+    color: #596D48;
 }
